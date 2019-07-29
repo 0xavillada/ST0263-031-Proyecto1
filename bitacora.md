@@ -13,3 +13,7 @@ Andres Felipe Villada Montoya
 
 # Semana 2: julio 22-26
 
+- Se avanza bastante en la parte del backend y la logica del negocio.
+- Se presentan muchos errores y retrasos en la instalacion del framework Angular pues éste requeria una version muy actualizada de node, la cual no se encontraba en los repositorios oficiales y se debio descargar manualmente.
+- Se logran instalar todas las tecnologias y herramientas nesesarias para el progreso (MySQL como base de datos, Python Flask y todas sus dependencias para el desarrollo del backend y Angular con NodeJs para el desarrollo del frontend).
+- Queda pendiente la apropiacion del framework Angular pues en este punto se dominan las demas capas del proyecto.
