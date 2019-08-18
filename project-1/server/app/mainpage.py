@@ -64,7 +64,7 @@ def mainpageAddComment():
     theme
     text
     """
-    MONGO_URL = 'mongodb://localhost'
+    MONGO_URL = 'mongodb://mongo-server'
     client = MongoClient(MONGO_URL)
     db = client['python-vueDB']
     collection = db['usuarios']
@@ -83,7 +83,7 @@ def mainpageByTheme():
     """
     theme
     """
-    MONGO_URL = 'mongodb://localhost'
+    MONGO_URL = 'mongodb://mongo-server'
     client = MongoClient(MONGO_URL)
     db = client['python-vueDB']
     collection = db['usuarios']
@@ -112,7 +112,7 @@ def mainpageEditComment():
     text
     indexInUser
     """
-    MONGO_URL = 'mongodb://localhost'
+    MONGO_URL = 'mongodb://mongo-server'
     client = MongoClient(MONGO_URL)
     db = client['python-vueDB']
     collection = db['usuarios']
@@ -135,7 +135,7 @@ def mainpageDeleteComment():
     text
     """
     print j
-    MONGO_URL = 'mongodb://localhost'
+    MONGO_URL = 'mongodb://mongo-server'
     client = MongoClient(MONGO_URL)
     db = client['python-vueDB']
     collection = db['usuarios']
