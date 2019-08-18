@@ -74,7 +74,7 @@ export default {
     },
 
     validar () {
-      axios.post('http://localhost:5000/api/v1.0/login', {
+      axios.post('http://pythonapp:5000/api/v1.0/login', {
         'username': this.usernameEntered.trim(),
         'password': this.passwordEntered.trim() })
 
