@@ -37,7 +37,7 @@
                       <div v-if="this.validationFail == true" class="warning text-center">
                         <label class="msg"> All spaces are required </label>
                       </div>
-                      <div v-if="this.operationSuccess == true" class="success">
+                      <div v-if="this.operationSuccess == true" class="success text-center">
                         <label class="msg"> {{message}} </label>
                       </div>
                     </div>
