@@ -115,7 +115,7 @@ export default {
     },
 
     validar () {
-      axios.post('http://localhost:5000/api/v1.0/register', {
+      axios.post('http://avillada.dis.eafit.edu.co/api/v1.0/register', {
 
         'name': this.nameEntered.trim(),
         'email': this.emailEntered.trim(),

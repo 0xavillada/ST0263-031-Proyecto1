@@ -16,7 +16,7 @@ def mainpage():
     """
     username
     """
-    MONGO_URL = 'mongodb://localhost'
+    MONGO_URL = 'mongodb://mongo-server'
     client = MongoClient(MONGO_URL)
     db = client['python-vueDB']
     collection = db['usuarios']
@@ -41,7 +41,7 @@ def mainpageConfirm():
     password
     """
 
-    MONGO_URL = 'mongodb://localhost'
+    MONGO_URL = 'mongodb://mongo-server'
     client = MongoClient(MONGO_URL)
     db = client['python-vueDB']
     collection = db['usuarios']

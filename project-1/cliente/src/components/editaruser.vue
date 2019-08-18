@@ -104,7 +104,7 @@ export default {
     if (this.validated === false) { this.$router.replace({name: 'login'}) }
     this.username = this.userProp
 
-    axios.post('http://localhost:5000/api/v1.0/mainpage/editUser', {
+    axios.post('http://avillada.dis.eafit.edu.co/api/v1.0/mainpage/editUser', {
       'username': this.username})
 
       .then((respuestaServer) => {
@@ -127,7 +127,7 @@ export default {
       var r = confirm('Are you sure you want to edit your profile?')
       if (r === false) { return 1 }
 
-      axios.post('http://localhost:5000/api/v1.0/mainpage/editUser/confirm', {
+      axios.post('http://avillada.dis.eafit.edu.co/api/v1.0/mainpage/editUser/confirm', {
 
         'name': this.name.trim(),
         'email': this.email.trim(),

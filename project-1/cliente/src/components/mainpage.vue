@@ -125,7 +125,7 @@ export default {
     init () {
       // aqui ya se encuentra validado
       if (this.tableState.toString() === 'theme'.toString()) { this.listByTheme(); return 1 }
-      axios.post('http://localhost:5000/api/v1.0/mainpage', {
+      axios.post('http://avillada.dis.eafit.edu.co/api/v1.0/mainpage', {
         'criterio': this.tableState })
 
         .then((respuestaServer) => {
@@ -146,7 +146,7 @@ export default {
     },
 
     addComment () {
-      axios.post('http://localhost:5000/api/v1.0/mainpage/addComment', {
+      axios.post('http://avillada.dis.eafit.edu.co/api/v1.0/mainpage/addComment', {
         'username': this.username,
         'theme': this.themeEntered,
         'text': this.commentEntered.trim() })
@@ -167,7 +167,7 @@ export default {
     },
 
     listByTheme () {
-      axios.post('http://localhost:5000/api/v1.0/mainpage/byTheme', {
+      axios.post('http://avillada.dis.eafit.edu.co/api/v1.0/mainpage/byTheme', {
         'theme': this.searchEntered })
 
         .then((respuestaServer) => {
@@ -212,7 +212,7 @@ export default {
 
     deleteComment (comment) {
       this.validationFail = false; this.operationSuccess = false
-      axios.post('http://localhost:5000/api/v1.0/mainpage/deleteComment', {
+      axios.post('http://avillada.dis.eafit.edu.co/api/v1.0/mainpage/deleteComment', {
         'username': comment[0].toString(),
         'theme': comment[1].toString(),
         'text': comment[2].toString().trim() })
@@ -229,7 +229,7 @@ export default {
     updateComment () {
       var r = confirm('Are you sure you want to edit this comment?')
       if (r === false) { return 1 }
-      axios.post('http://localhost:5000/api/v1.0/mainpage/editComment', {
+      axios.post('http://avillada.dis.eafit.edu.co/api/v1.0/mainpage/editComment', {
         'username': this.username.toString(),
         'theme': this.themeEditing.toString(),
         'indexInUser': this.indexInUser,

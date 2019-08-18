@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     getMensaje () {
-      const path = 'http://localhost:5000/api/v1.0/login'
+      const path = 'http://avillada.dis.eafit.edu.co/api/v1.0/login'
       axios.get(path).then((respuesta) => {
         this.mensaje = respuesta.data
       })

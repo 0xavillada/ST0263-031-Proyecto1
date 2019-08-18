@@ -15,7 +15,7 @@ def mainpageInit():
     """
     criterio
     """
-    MONGO_URL = 'mongodb://localhost'
+    MONGO_URL = 'mongodb://mongo-server'
     client = MongoClient(MONGO_URL)
     db = client['python-vueDB']
     collection = db['usuarios']
